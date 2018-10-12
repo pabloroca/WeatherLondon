@@ -26,7 +26,7 @@ final class ForeCastViewController: UIViewController {
         view.registerHeaderFooterClass(ofType: ForeCastSectionHeaderView.self)
         view.tableFooterView = UIView()
         view.sectionHeaderHeight = ForeCastSectionHeaderView.LayoutConstants.headerHeight
-        view.rowHeight = UITableView.automaticDimension
+        view.rowHeight = ForeCastCell.designatedHeight
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
@@ -34,6 +34,7 @@ final class ForeCastViewController: UIViewController {
     private lazy var waitingIndicator: UIActivityIndicatorView = {
         let activityIndicator = UIActivityIndicatorView()
         activityIndicator.style = .gray
+        activityIndicator.translatesAutoresizingMaskIntoConstraints = false
         return activityIndicator
     }()
 
@@ -78,15 +79,15 @@ final class ForeCastViewController: UIViewController {
 
         view.addSubview(tableView)
         view.addSubview(waitingIndicator)
-        waitingIndicator.bringSubviewToFront(view)
+        //waitingIndicator.bringSubviewToFront(view)
         
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
             tableView.leadingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.leadingAnchor),
             tableView.trailingAnchor.constraint(equalTo: view.safeAreaLayoutGuide.trailingAnchor),
-            waitingIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor),
-            waitingIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor)
+            waitingIndicator.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            waitingIndicator.centerYAnchor.constraint(equalTo: view.centerYAnchor)
             ])
     }
 
