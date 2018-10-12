@@ -26,6 +26,13 @@ class ForeCastSectionHeaderView: UITableViewHeaderFooterView {
 
     // MARK: - Views
 
+    private let view: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.backgroundColor = UIColor.pr2White
+        return view
+    }()
+
     private let lblDate: UILabel = {
         let label = UILabel()
         label.font = UIFont.pr2FontHeader()
@@ -76,17 +83,22 @@ class ForeCastSectionHeaderView: UITableViewHeaderFooterView {
     // MARK: - View config
 
     override func updateConstraints() {
+        contentView.translatesAutoresizingMaskIntoConstraints = false
 
         NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: contentView.topAnchor),
+            view.bottomAnchor.constraint(equalTo: contentView.bottomAnchor),
+            view.leadingAnchor.constraint(equalTo: contentView.leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: contentView.trailingAnchor),
             contentView.heightAnchor.constraint(equalToConstant: LayoutConstants.headerHeight),
-            lblDate.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: Constants.kMarginNormal),
-            lblDate.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            lblDate.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: Constants.kMarginNormal),
+            lblDate.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             lblTempMin.leftAnchor.constraint(equalTo: lblDate.rightAnchor, constant: Constants.kMarginNormal),
-            lblTempMin.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            lblTempMin.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             lblTempMax.leftAnchor.constraint(equalTo: lblTempMin.rightAnchor, constant: Constants.kMarginNormal),
-            lblTempMax.centerYAnchor.constraint(equalTo: contentView.centerYAnchor),
+            lblTempMax.centerYAnchor.constraint(equalTo: view.centerYAnchor),
             lblSuggestion.leftAnchor.constraint(equalTo: lblTempMax.rightAnchor, constant: Constants.kMarginNormal),
-            lblSuggestion.centerYAnchor.constraint(equalTo: contentView.centerYAnchor)
+            lblSuggestion.centerYAnchor.constraint(equalTo: view.centerYAnchor)
             ])
 
         super.updateConstraints()
@@ -111,11 +123,12 @@ class ForeCastSectionHeaderView: UITableViewHeaderFooterView {
     private func setup() {
         contentView.backgroundColor = .white
 
-        contentView.addSubview(lblDate)
-        contentView.addSubview(lblTempMin)
-        contentView.addSubview(lblTempMax)
-        contentView.addSubview(lblSuggestion)
-        contentView.setNeedsUpdateConstraints()
+        self.addSubview(view)
+        view.addSubview(lblDate)
+        view.addSubview(lblTempMin)
+        view.addSubview(lblTempMax)
+        view.addSubview(lblSuggestion)
+        view.setNeedsUpdateConstraints()
     }
 
     private func update() {
