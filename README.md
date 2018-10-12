@@ -24,6 +24,14 @@ carthage update --platform iOS
 4. **Running tests**. Open WeatherLondon.xcworkspace and Command Key + U
 
 
+## With more time
+
+- Build a sleeker UI. I mostly concentrate my efforts in Architecture.
+- Remove Loopable and parse data with **Decodable** protocol
+- I would cache data and store ir locally
+- DIfferent targets, so we can test real Remote data and a Mock (Stubs) local environment.
+
+
 ## Architecture
 
 - Using Swift 4.2 / XCode 10
@@ -78,10 +86,11 @@ carthage update --platform iOS
 
 All data model is held in memory, I think it´s pointless to store it locally. If I needed to store it locally I would use an encrypted Realm data store, with that we can avoid reverse engineering of the results. 
 
-## With more time
 
-- Build a sleeker UI. I mostly concentrate my efforts in Architecture.
-- Remove Loopable and parse data with **Decodable** protocol
-- I would cache data and store ir locally
-- DIfferent targets, so we can test real Remote data and a Mock (Stubs) local environment.
+## Sorting the project file
 
+Using the pbxproj-sort.pl script included in the Scripts directly to sort the project file with keep the project in order as well as help demystify merge conflicts in the project file. 
+
+To run the sorting script, use:
+
+`./Scripts/pbxproj-sort.pl WeatherLondon.xcodeproj/project.pbxproj`

@@ -102,9 +102,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DFF1735216FD34800E84E91 /* PR2StudioSwift.framework in Frameworks */,
-				6DFF1733216FD33600E84E91 /* Kingfisher.framework in Frameworks */,
 				6DFF1731216FD32700E84E91 /* Alamofire.framework in Frameworks */,
+				6DFF1733216FD33600E84E91 /* Kingfisher.framework in Frameworks */,
+				6DFF1735216FD34800E84E91 /* PR2StudioSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,9 +112,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D187FF321701B4500A12809 /* PR2StudioSwift.framework in Frameworks */,
-				6D187FF221701B3C00A12809 /* Kingfisher.framework in Frameworks */,
 				6D187FF121701B3200A12809 /* Alamofire.framework in Frameworks */,
+				6D187FF221701B3C00A12809 /* Kingfisher.framework in Frameworks */,
+				6D187FF321701B4500A12809 /* PR2StudioSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,10 +178,10 @@
 		6D8D8066216FC47400BC37C6 = {
 			isa = PBXGroup;
 			children = (
+				6DFF172F216FD32600E84E91 /* Frameworks */,
+				6D8D8070216FC47400BC37C6 /* Products */,
 				6D8D8071216FC47400BC37C6 /* WeatherLondon */,
 				6D8D8086216FC47600BC37C6 /* WeatherLondonTests */,
-				6D8D8070216FC47400BC37C6 /* Products */,
-				6DFF172F216FD32600E84E91 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -197,13 +197,13 @@
 		6D8D8071216FC47400BC37C6 /* WeatherLondon */ = {
 			isa = PBXGroup;
 			children = (
-				6D8D8092216FC8FF00BC37C6 /* README.md */,
 				6D8D8094216FC94D00BC37C6 /* Application */,
 				6DFF1725216FCDB600E84E91 /* Controllers */,
 				6DFF172C216FD2A900E84E91 /* Coordinator */,
 				6D187FCF216FDEF100A12809 /* Models */,
 				6D187FD7216FE30A00A12809 /* Network */,
 				6DFF171C216FCCA800E84E91 /* Resources */,
+				6D8D8092216FC8FF00BC37C6 /* README.md */,
 			);
 			path = WeatherLondon;
 			sourceTree = "<group>";
@@ -211,10 +211,10 @@
 		6D8D8086216FC47600BC37C6 /* WeatherLondonTests */ = {
 			isa = PBXGroup;
 			children = (
-				6D8D8089216FC47600BC37C6 /* Info.plist */,
-				6D187FF421701B8100A12809 /* ForeCastViewModelTests.swift */,
-				6D187FED21701AB900A12809 /* ModelTests.swift */,
 				6D187FEA21701A9800A12809 /* ModelTestData */,
+				6D187FF421701B8100A12809 /* ForeCastViewModelTests.swift */,
+				6D8D8089216FC47600BC37C6 /* Info.plist */,
+				6D187FED21701AB900A12809 /* ModelTests.swift */,
 			);
 			path = WeatherLondonTests;
 			sourceTree = "<group>";
@@ -371,10 +371,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D8D8093216FC8FF00BC37C6 /* README.md in Resources */,
-				6D187FD6216FDFEF00A12809 /* Localizable.strings in Resources */,
 				6DFF1724216FCCA800E84E91 /* Assets.xcassets in Resources */,
 				6DFF1722216FCCA800E84E91 /* LaunchScreen.storyboard in Resources */,
+				6D187FD6216FDFEF00A12809 /* Localizable.strings in Resources */,
+				6D8D8093216FC8FF00BC37C6 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,25 +435,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D187FE1216FEE6F00A12809 /* ForeCastSectionHeaderViewModel.swift in Sources */,
-				6DFF1738216FD40900E84E91 /* DependencyContainer.swift in Sources */,
-				6D187FD3216FDF7600A12809 /* ForeCastItem.swift in Sources */,
-				6DFF173A216FD46C00E84E91 /* MainCoordinator.swift in Sources */,
-				6D187FE3216FF1B900A12809 /* ForeCastCell.swift in Sources */,
-				6D187FDC216FE38200A12809 /* ForeCastService.swift in Sources */,
-				6D187FE5216FF25600A12809 /* ForeCastCellViewModel.swift in Sources */,
+				6DFF1727216FCFB800E84E91 /* APIConstants.swift in Sources */,
 				6DFF172E216FD2BA00E84E91 /* AppCoordinator.swift in Sources */,
 				6D8D8097216FC94D00BC37C6 /* AppDelegate.swift in Sources */,
-				6D187FDE216FE3B200A12809 /* ForeCastServiceRemote.swift in Sources */,
-				6DFF172B216FCFC500E84E91 /* Styles.swift in Sources */,
-				6DFF173E216FD86500E84E91 /* ForeCastViewModel.swift in Sources */,
-				6D187FD1216FDF3D00A12809 /* ForeCast.swift in Sources */,
-				6D187FDA216FE35B00A12809 /* ServiceFactory.swift in Sources */,
-				6DFF173C216FD68400E84E91 /* ForeCastViewController.swift in Sources */,
-				6DFF1727216FCFB800E84E91 /* APIConstants.swift in Sources */,
-				6DFF1729216FCFBF00E84E91 /* DefaultData.swift in Sources */,
 				6D187FE7216FF34300A12809 /* Constants.swift in Sources */,
+				6DFF1729216FCFBF00E84E91 /* DefaultData.swift in Sources */,
+				6DFF1738216FD40900E84E91 /* DependencyContainer.swift in Sources */,
+				6D187FD1216FDF3D00A12809 /* ForeCast.swift in Sources */,
+				6D187FE3216FF1B900A12809 /* ForeCastCell.swift in Sources */,
+				6D187FE5216FF25600A12809 /* ForeCastCellViewModel.swift in Sources */,
+				6D187FD3216FDF7600A12809 /* ForeCastItem.swift in Sources */,
 				6D187FE9216FF4F800A12809 /* ForeCastSectionHeaderView.swift in Sources */,
+				6D187FE1216FEE6F00A12809 /* ForeCastSectionHeaderViewModel.swift in Sources */,
+				6D187FDC216FE38200A12809 /* ForeCastService.swift in Sources */,
+				6D187FDE216FE3B200A12809 /* ForeCastServiceRemote.swift in Sources */,
+				6DFF173C216FD68400E84E91 /* ForeCastViewController.swift in Sources */,
+				6DFF173E216FD86500E84E91 /* ForeCastViewModel.swift in Sources */,
+				6DFF173A216FD46C00E84E91 /* MainCoordinator.swift in Sources */,
+				6D187FDA216FE35B00A12809 /* ServiceFactory.swift in Sources */,
+				6DFF172B216FCFC500E84E91 /* Styles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,17 +461,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D187FF721701BD300A12809 /* ForeCastSectionHeaderViewModel.swift in Sources */,
-				6D187FF521701B8100A12809 /* ForeCastViewModelTests.swift in Sources */,
-				6D187FEE21701AB900A12809 /* ModelTests.swift in Sources */,
-				6D187FF921701BF900A12809 /* DefaultData.swift in Sources */,
-				6D187FFB21701C1000A12809 /* ForeCastService.swift in Sources */,
-				6D187FF621701BAE00A12809 /* ForeCastViewModel.swift in Sources */,
-				6D187FEF21701AF400A12809 /* ForeCast.swift in Sources */,
-				6D187FFC21701C1300A12809 /* ForeCastServiceRemote.swift in Sources */,
 				6D187FFD21701C2C00A12809 /* APIConstants.swift in Sources */,
+				6D187FF921701BF900A12809 /* DefaultData.swift in Sources */,
+				6D187FEF21701AF400A12809 /* ForeCast.swift in Sources */,
 				6D187FF821701BD600A12809 /* ForeCastCellViewModel.swift in Sources */,
 				6D187FF021701AF700A12809 /* ForeCastItem.swift in Sources */,
+				6D187FF721701BD300A12809 /* ForeCastSectionHeaderViewModel.swift in Sources */,
+				6D187FFB21701C1000A12809 /* ForeCastService.swift in Sources */,
+				6D187FFC21701C1300A12809 /* ForeCastServiceRemote.swift in Sources */,
+				6D187FF621701BAE00A12809 /* ForeCastViewModel.swift in Sources */,
+				6D187FF521701B8100A12809 /* ForeCastViewModelTests.swift in Sources */,
+				6D187FEE21701AB900A12809 /* ModelTests.swift in Sources */,
 				6D187FFA21701C0800A12809 /* ServiceFactory.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
