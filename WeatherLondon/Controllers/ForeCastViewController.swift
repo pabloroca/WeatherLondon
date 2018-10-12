@@ -79,8 +79,7 @@ final class ForeCastViewController: UIViewController {
 
         view.addSubview(tableView)
         view.addSubview(waitingIndicator)
-        //waitingIndicator.bringSubviewToFront(view)
-        
+
         NSLayoutConstraint.activate([
             tableView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
             tableView.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor),
