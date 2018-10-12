@@ -1,0 +1,17 @@
+/* 
+  Localizable.strings
+  WeatherLondon
+
+  Created by Pablo Roca Rozas on 11/10/18.
+  Copyright © 2018 PR2Studio. All rights reserved.
+*/
+
+// Suggestions
+
+"Umbrella" = "Umbrella";
+"Sunglasses" = "Sunglasses";
+"Fair" = "Fair";
+
+// waiting view
+"loadingdata" = "Loading data ...";
+"slowinternet" = "Slow internet connection, be patient...";
